@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
     std::cout << "You input three numbers: " << a << ", " << b << ", " << c << std::endl;
 
-    Result result = Result{0, 0, 0};
+    Result result = Result{a, b, c};
 
     CompareThreeNumbers(a, b, c, result);
 
