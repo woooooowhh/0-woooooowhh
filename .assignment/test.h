@@ -12,9 +12,40 @@ bool check(const Result &result, int a, int b, int c)
 {
     bool correct = result.max >= result.mid && result.mid >= result.min;
 
-    correct = correct && (result.min == a || result.min == b || result.min == c);
-    correct = correct && (result.mid == a || result.mid == b || result.mid == c);
-    correct = correct && (result.max == a || result.max == b || result.max == c);
+    // 判断输出是否来自输入的三个数
+    if (result.min == a)
+    {
+        if (result.max == b)
+        {
+            correct = correct && result.mid == c;
+        }
+        else if (result.max == c)
+        {
+            correct = correct && result.mid == b;
+        }
+    }
+    else if (result.min == b)
+    {
+        if (result.max == a)
+        {
+            correct = correct && result.mid == c;
+        }
+        else if (result.max == c)
+        {
+            correct = correct && result.mid == a;
+        }
+    }
+    else if (result.min == c)
+    {
+        if (result.max == a)
+        {
+            correct = correct && result.mid == b;
+        }
+        else if (result.max == b)
+        {
+            correct = correct && result.mid == a;
+        }
+    }
 
     return correct;
 }
