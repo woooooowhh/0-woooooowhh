@@ -11,6 +11,12 @@
     "upload_output": true,
     "steps": [
       {
+        "title": "Compile",
+        "timeout": 10,
+        "command": "g++ main.cpp -o main && chmod +x main",
+        "score": 0
+      },
+      {
         "title": "Checkpoint 1",
         "timeout": 5,
         "command": "bash .assignment/test.sh 1 2 3",
