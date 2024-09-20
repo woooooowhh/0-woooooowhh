@@ -19,61 +19,61 @@
       {
         "title": "Checkpoint 1",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 1 2 3",
+        "command": "./main 1 2 3",
         "score": 10
       },
       {
         "title": "Checkpoint 2",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 3 2 1",
+        "command": "./main 3 2 1",
         "score": 10
       },
       {
         "title": "Checkpoint 3",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 3 1 2",
+        "command": "./main 3 1 2",
         "score": 10
       },
       {
         "title": "Checkpoint 4",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 2 3 1",
+        "command": "./main 2 3 1",
         "score": 10
       },
       {
         "title": "Checkpoint 5",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 2147483647 2147483647 2147483647",
+        "command": "./main 2147483647 2147483647 2147483647",
         "score": 10
       },
       {
         "title": "Checkpoint 6",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 1200000000 1200000000 -2147483648",
+        "command": "./main 1200000000 1200000000 -2147483648",
         "score": 10
       },
       {
         "title": "Checkpoint 7",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 2147483647 -2147483648 0",
+        "command": "./main 2147483647 -2147483648 0",
         "score": 10
       },
       {
         "title": "Checkpoint 8",
         "timeout": 5,
-        "command": "bash .assignment/test.sh -2147483648 2147483647 0",
+        "command": "./main -2147483648 2147483647 0",
         "score": 10
       },
       {
         "title": "Checkpoint 9",
         "timeout": 5,
-        "command": "bash .assignment/test.sh -10 -100 -1000",
+        "command": "./main -10 -100 -1000",
         "score": 10
       },
       {
         "title": "Checkpoint 10",
         "timeout": 5,
-        "command": "bash .assignment/test.sh 0 0 0",
+        "command": "./main 0 0 0",
         "score": 10
       }
     ]
