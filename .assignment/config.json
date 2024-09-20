@@ -14,7 +14,8 @@
         "title": "Compile",
         "timeout": 10,
         "command": "g++ main.cpp -o main && chmod +x main",
-        "score": 0
+        "score": 0,
+        "required": true
       },
       {
         "title": "Checkpoint 1",
